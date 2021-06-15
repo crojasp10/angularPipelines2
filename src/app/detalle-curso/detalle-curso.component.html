@@ -1,0 +1,7 @@
+<div class="container" *ngIf="curso.id > 0">
+  <h2>{{ curso.id }} {{ curso.nombre }}</h2>
+  <hr>
+  <ul>
+    <li *ngFor="let i of curso.integrantes">{{ i.nombre }} ({{ i.email }})</li>
+  </ul>
+</div>

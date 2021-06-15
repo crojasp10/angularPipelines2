@@ -1,0 +1,15 @@
+<h1> SoftFace </h1>
+
+<p>Nombre </p>
+                                                <!--Para usar el ngModel tuve que importar el FormsModule en app.module -->
+<input type="text" [(ngModel)]="name"> 
+<button (click)="search()"> Buscar </button>
+<h3 > {{name}} </h3>
+<h3 > {{id}} </h3>
+<div class="lista">
+    <div *ngFor= "let i of ListaWeb">
+        <div class="IdWeb"> {{i.id}}</div>
+        <div class = "NameWeb" >"{{i.name}}" </div>
+    </div>
+    
+</div>

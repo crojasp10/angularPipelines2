@@ -1,0 +1,46 @@
+
+<body>
+    <header>
+        <h1> Listas de vehiculos y motos</h1>
+    </header>
+    <section class="principal">
+
+        <div  *ngFor= "let i of ListaObjetos">
+            <div [ngClass]= "{'MargenAutos': encender === false, 
+                            'MargenAutos2':encender === true}"> 
+                <div class="Marca">{{i.marca}} </div>
+                <div>{{i.modelo}} Año:{{i.year}} </div>
+                <div> Transmision: {{i.transmision}} </div>
+                <div>{{i.puertas}} puertas </div>
+            <div class="botones">
+            <div><button class= "boton1"(click)= "DeleteObject([i])">Eliminar</button></div>
+            <div><button class= "boton2"(click)= "botonencender()">Encender</button></div>
+            </div>
+        </div>
+            <div>{{i.color}}</div>
+            <div>${{i.precio}}</div>
+        </div>
+    </section>
+
+    <h2> Motos</h2>
+    <section class="principal">
+        <div  *ngFor= "let i of ListaObjetos2">
+            <div class="MargenAutos">
+                <div class="Marca">{{i.marca}} </div> 
+                <div>{{i.modelo}} Año:{{i.year}} </div>
+                <div>{{i.cc}} cc </div>
+            <div class= "ColorMotos"></div>
+            <div>
+            <div class="botones">
+                <button class= "boton1" (click)= "DeleteObject2(i)">Eliminar
+                </button>
+                <div><button class= "boton2"(click)= "FindElement($event.target.value)">Encender</button></div>
+            </div> 
+            </div>
+        </div>
+            <div>{{i.color}}</div>
+            <div>${{i.precio}}</div>  
+        </div>
+    </section>
+    
+</body>

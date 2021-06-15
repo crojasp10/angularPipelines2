@@ -1,0 +1,26 @@
+.TamañoPokemon{
+    width:200px;
+}
+
+.lista{
+    display:flex;
+    width: 800px;
+    margin:50px;
+    flex-wrap:wrap;
+    border:5px solid black;
+}
+
+div{
+    flex: 0 1 150px;
+   margin-left: 40px;
+}
+
+.NombrePokemon{
+    font-size:24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cambiar{
+    height: 20px;
+    
+}

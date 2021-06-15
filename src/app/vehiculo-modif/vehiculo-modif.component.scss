@@ -1,0 +1,111 @@
+
+/*Header*/
+header,h2{
+    background-color:rgb(126, 105, 245);
+    padding: 20px;
+    font-style:normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+
+
+
+/*body*/
+body{
+    background-color: rgb(126, 105, 245);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:2500px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.principal{
+    display:flex;
+    width: 1700px;
+    margin:50px;
+    flex-wrap:wrap;
+}
+div{
+    flex: 0 1 270px;
+
+}
+.MargenAutos{
+    border: 4px solid black;
+    margin-left:20px;
+    background-color:rgb(156, 140, 245);
+    padding:5px;
+    height: 300px;
+}
+.MargenAutos2{
+    border: 4px solid black;
+    margin-left:20px;
+    background-color:rgb(152, 245, 140);
+    padding:5px;
+    height: 300px;
+}
+
+
+
+.Color{
+    width:100px;
+    height: 50px;
+    border: 4px solid black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(180, 169, 241);
+}
+.Margeninferior{
+    margin-bottom: 10px;
+}
+.Marca{
+    color:black;
+    font-size: 34px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.ColorMotos{
+    width:100px;
+    height: 50px;
+    border: 3px solid black;
+    
+    margin-bottom: 5px;;
+    background-color:rgb(50, 37, 124)
+}
+.botones{
+    display:flex;
+    width:150px;
+    margin-top: 10px;
+    
+}
+.boton1{
+    background-color: rgb(168, 28, 28);
+    height:30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    color:white;
+
+    
+}
+
+.boton2{
+    background-color:rgb(10, 97, 10);
+    height:30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    color:white;
+    margin-left:10px;
+
+}
+.botonheader{
+    background-color:rgb(26, 104, 26);
+    height:50px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color:black;
+    margin:10px;
+}
+

@@ -1,0 +1,56 @@
+<header class= "titulo">
+    <h1>Tareas</h1>
+</header>
+ <div class= "formatoNota">   
+ 
+    <form 
+        [formGroup]="form"
+        (ngSubmit)="onSubmit(form.value)">
+        <ul>
+            <li>
+                <label for="plazo"> Plazo</label>
+                <select name="plazo" class="plazo" formControlName="plazo">
+                    <option value="Corto plazo">Corto plazo</option>
+                    <option value="Mediano plazo">Mediano plazo</option>
+                    <option value="Largo plazo">Largo plazo</option>
+                </select>
+            </li>
+            <li>
+                <label for="date" > Fecha</label>
+                <input type="date" name="date"  class="date" formControlName="date" [(ngModel)]="date">
+            </li>
+            <li>
+                <label for="titulo"> Titulo</label>
+                <input style= "font-size:25px;" type="text" name="titulo"  class= "InputTitulo" formControlName="titulo" [(ngModel)]="title">
+            </li>
+            <li>
+                <label for="nota" > Nota</label>
+                <input  style= "font-size:25px;"  type="text" name="nota"  class="InputNota" formControlName="nota"  [(ngModel)]="note">
+            </li>
+            
+        </ul>
+        <button (click)= "Registrar()"  type= "submit"> Registrar tarea</button>
+    </form>
+</div>
+
+    <section class= "panelTareas">
+        <div class="liPanel panel1"><h2 class="TituloPanel TituloPanel1">Registradas</h2>
+            <hr/>
+            <div *ngFor= "let i of ListaNotas">
+                <div class="TituloNota">{{i.title}}</div>
+                <div class="Contenido">
+                    <div> {{i.date}}</div>
+                    {{i.note}}
+                </div>
+                <hr/>
+            </div>
+        </div> 
+        <div class="liPanel panel2"><h2 class="TituloPanel TituloPanel2">En proceso</h2>
+            <hr/>
+        </div>
+        <div class="liPanel panel3"><h2 class="TituloPanel TituloPanel3">Terminadas</h2>
+            <hr/>
+        </div>
+   
+    
+</section>

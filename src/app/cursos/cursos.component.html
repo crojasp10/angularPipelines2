@@ -1,0 +1,30 @@
+<div class="container">
+    <app-form-curso></app-form-curso>
+    <hr>
+    <h1>Cursos</h1>
+
+    <body>
+    <table class=" table table-striped">
+        <thead>
+            <th> ID </th>
+            <th> Nombre</th>
+            <th> Acciones</th>
+        </thead>
+        <tbody>
+            <tr *ngFor= " let i of cursos">
+                <td>{{ i.id }}</td>
+                <td>{{ i.nombre }}</td>
+                <td>
+                    
+                    <a [routerLink]="['/curso']" [queryParams]="{id: i.id}">  
+                        <i class="fa fa-eye"> </i>
+                    </a>
+                    <button class="btn btn-success " style="margin-left: 20px"> 
+                        <i class="fa fa-eye"> </i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+</div >

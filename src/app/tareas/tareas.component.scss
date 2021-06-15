@@ -1,0 +1,138 @@
+.titulo{
+    background-color:rgb(243, 234, 234);
+    height:200px;
+}
+h1{
+    text-align: center;
+    color:black;
+    font-family: inherit;
+    font-size:40px;
+    margin-bottom: 100px;
+    padding:70px;
+    margin-top:0px;
+}
+
+.formatoNota{
+    border:4px rgb(92, 92, 90) solid;
+    width:350px;
+    border-radius: 15px;
+    margin-left:50px;
+    margin-top:50px;
+    border:2px solid rgb(138, 132, 132);
+    background-color: rgb(241, 241, 241);
+    
+  
+}
+label{
+    display:block;
+    font-family:inherit;
+    font-size: 22px;
+    margin-left:5px;
+    color:rgb(80, 72, 72);
+}
+.InputNota{
+   
+    width : 300px;
+    height :300px;
+}
+.InputTitulo{
+    height :50px;
+    width:300px;
+}
+
+.plazo{
+    font-size:18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border:2px solid rgb(138, 132, 132);
+}
+
+li{
+    list-style-type: none;
+}
+
+.date{
+    font:'Fira Sans', sans-serif;
+    font-size: 20px;
+    color:rgb(80, 72, 72);
+}
+
+button{
+    font-family:inherit;
+    font-size: 20px;
+    margin-left:40px;
+    margin-bottom: 10px;
+    border:2px solid rgb(65, 59, 59);
+    border-radius:25px;
+    color: rgb(75, 82, 180);
+    height:50px;
+    background-color: rgb(235, 227, 227)
+   
+}
+input{
+    border:2px solid rgb(138, 132, 132);
+    border-radius:8px;
+   
+}
+ul{
+    padding:10px;
+    margin:2px;
+}
+
+//Panel de tareas
+
+.panelTareas{
+    text-align: inline-block;
+    display:flex;
+    list-style-type: none;
+    width:1800px;
+    
+    
+}
+.liPanel{
+    flex:1 0 500px;
+    margin-top:100px;
+    height:1000px;
+    text-align:center;
+    font-family: inherit;
+    color:rgb(80, 72, 72);
+    font-size : 30px;
+    border:2px solid rgb(138, 132, 132);
+    margin-left:100px;
+    border-radius: 12px;
+    background-color:rgb(241, 241, 241);
+}
+
+.TituloNota{
+    font-family: inherit;
+    font-size: 30px;
+    padding-top:50px;
+    margin-bottom: 30px;
+}
+.Contenido{
+    border:2px solid rgb(138, 132, 132);
+    width:300px;
+    margin: 20px 100px 20px 100px;
+}
+
+.TituloPanel{
+    background-color:rgb(226, 224, 235);
+    height: 100px;
+    
+}
+ h2{
+    margin:0px;
+    padding-top:30px;
+ }
+ hr{
+     margin:0px;
+ }
+
+.TituloPanel1{
+    background-color:rgb(118, 182, 35);
+}
+.TituloPanel2{
+    background-color:rgb(151, 219, 63);
+}
+.TituloPanel3{
+    background-color:rgb(144, 241, 15);
+}

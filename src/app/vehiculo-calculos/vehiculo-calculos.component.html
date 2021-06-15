@@ -1,0 +1,17 @@
+<p> {{precio}} </p>
+
+<label> Introduce el porcentaje a calcular</label>
+<br><br>
+
+<div  *ngFor= "let i of ListaObjetos">
+            <div [ngClass]= "{'MargenAutos': encender === false, 
+                            'MargenAutos2':encender === true}"> 
+                <div class="Marca">{{i.marca}} </div>
+                <input type="number" 
+                      #porcentajee    
+                      class="Porcentaje" 
+                      value=""
+                     >
+                     <button (click)= "askPorcentaje(porcentajee.value)"> click </button>
+            <div>${{i.precio}}</div>
+        </div>

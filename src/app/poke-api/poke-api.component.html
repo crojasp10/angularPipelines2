@@ -1,0 +1,19 @@
+<h1> Pokedex </h1>
+
+<p>Nombre </p>
+                                                <!--Para usar el ngModel tuve que importar el FormsModule en app.module -->
+<input type="text" [(ngModel)]="name"> 
+<button (click)="search()"> Buscar </button>
+<button class="cambiar"> Siguiente </button>
+
+
+<img class= "TamañoPokemon"  src="{{urlImage}}" alt="Foto Pokemon">
+<h3 > {{urlHabilidad1}} </h3>
+<h3 > {{urlHabilidad2}} </h3>
+<div class="lista">
+    <div *ngFor= "let i of ListaPokemon">
+        <div class="NombrePokemon"> {{i.species}}</div>
+        <img class = "TamañoPokemon" src="{{i.image}}">
+    </div>
+    
+</div>
